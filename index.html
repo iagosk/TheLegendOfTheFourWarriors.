@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" media="all" />
+    <title>A Lenda dos Quatro Guerreiros: O Pesadelo do Bosque Sombrio</title>
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <div id="welcome-screen">
+            <img src="./images/castle.png" alt="castelo" width="100">
+            <br />
+            <br />
+            <h1>Welcome to the RPG - The Legend of the Four Warriors.</h1>
+            <br />
+            <br />
+            <button id="start-button">Start</button>
+        </div>
+        <div id="story-screen" class="hidden">
+            <p id="story-text"></p>
+            <button id="continue-button" class="hidden">Continue</button>
+        </div>
+        <div id="class-selection" class="hidden">
+            <h2>Choose the names of the classes</h2>
+            <br />
+            <input
+            type="text"
+            id="barbaro-name"
+            placeholder="Name of Barbarian"
+            /><br />
+            <input type="text" id="ladino-name" placeholder="Name of Rogue" /><br />
+            <input type="text" id="mago-name" placeholder="Name of Wizard" /><br />
+            <input
+            type="text"
+            id="clerigo-name"
+            placeholder="Name of Cleric"
+            /><br />
+            <br />
+            <button id="confirm-names">Confirm</button>
+        </div>
+        <div id="game-container" class="hidden">
+            <h1>The Legend of the Four Warriors.</h1>
+            <br />
+            <br />
+            <div id="map"></div>
+            <div id="party-stats"></div>
+            <div id="enemy-stats" class="hidden">
+                <h3>Enemy:</h3>
+            </div>
+        </div>
+        <div id="choices" class="hidden"></div>
+        <div id="combat-log" class="hidden">
+            <h3>Combat - Logs</h3>
+        </div>
+
+        <audio autoplay preload="auto">
+          <source id="source" src="./sounds/AnyConv.com__initial.mp4" type="audio/mp4" />
+          Seu navegador não suporta áudio.
+        </audio>
+    </div>
+</body>
+</html>
